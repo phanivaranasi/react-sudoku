@@ -33,8 +33,22 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>React Sudoko</title>
+  <title>React Sudoku</title>
 </head>
+<style>
+  .footer-links-right{
+    float:right;
+  }
+  .footer-links-left{
+    float:left;
+  }
+  .footer-links li{
+    float:left;
+    list-style: none;
+    margin-right:5px;
+  }
+  
+</style>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -53,8 +67,19 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  <footer style="bottom:0px;position: absolute;width:100%;background-color:#CCD9DD;">
-    &copy 2019.
+  <footer style="bottom:0px;position:absolute;width:100%;background-color:#CCD9DD;">
+    <ul class="footer-links footer-links-left">
+      <li>&copy 2019</li>
+    </ul>
+    <ul class="footer-links footer-links-right">
+      <li><a href="#">About</a></li>
+      <li>|</li>
+      <li><a href="#">Version: Beta</a></li>
+      <li>|</li>
+      <li><a href="#">Changelog</a></li>
+      <li>|</li>
+      <li><a href="#">Terms of Use</a></li>
+    </ul>
   </footer>
 </body>
 
